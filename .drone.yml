@@ -2,11 +2,10 @@ kind: pipeline
 name: default
 
 steps:
-- name: test
+- name: build 
   image: node:9.8.0
   commands:
-  - npm install
-  - npm test
+  - sh ./.drone/build.sh
 
 
 
